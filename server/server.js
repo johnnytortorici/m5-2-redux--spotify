@@ -29,7 +29,7 @@ app.get("/spotify_access_token", (req, res, next) => {
     body: "grant_type=client_credentials",
   })
     .then((data) => data.json())
-    .then((data) => res.send({ data }));
+    .then((json) => res.send(json));
 });
 
 app.listen(port, function (error) {

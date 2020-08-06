@@ -1,7 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const ArtistRoute = () => {
-  return <h1>Artist Page</h1>;
+  const accessToken = useSelector((state) => state.auth.token);
+
+  return accessToken;
 };
 
 export default ArtistRoute;
