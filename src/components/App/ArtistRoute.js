@@ -18,7 +18,6 @@ const ArtistRoute = () => {
   const artistId = useParams().id;
 
   const currentArtist = useSelector((state) => state.artists.currentArtist);
-  const status = useSelector((state) => state.artists.status);
 
   dispatch(requestArtistProfile());
   useEffect(() => {

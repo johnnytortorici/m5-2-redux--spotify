@@ -27,7 +27,6 @@ const App = () => {
       .then((res) => res.json())
       .then((json) => {
         dispatch(receiveAccessToken(json.access_token));
-        console.log(json);
       })
       .catch((err) => {
         console.log(err);
