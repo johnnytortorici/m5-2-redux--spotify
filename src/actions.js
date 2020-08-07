@@ -16,3 +16,22 @@ export const receiveAccessTokenError = () => {
     type: "RECEIVE_ACCESS_TOKEN_ERROR",
   };
 };
+
+export const requestArtistProfile = () => {
+  return {
+    type: "REQUEST_ARTIST_PROFILE",
+  };
+};
+
+export const receiveArtistProfile = (profile) => {
+  return {
+    type: "RECEIVE_ARTIST_PROFILE",
+    profile,
+  };
+};
+
+export const receiveArtistProfileError = () => {
+  return {
+    type: "RECEIVE_ARTIST_PROFILE_ERROR",
+  };
+};
